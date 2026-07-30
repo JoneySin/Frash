@@ -355,13 +355,18 @@ body.light .hero{background:
 .modal-wrap{
   position:fixed;inset:0;z-index:800;display:flex;align-items:center;justify-content:center;
   opacity:0;visibility:hidden;transition:var(--transition);padding:20px;
+  background:rgba(3,8,6,0.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
 }
+body.light .modal-wrap{background:rgba(20,30,25,0.45);}
 .modal-wrap.show{opacity:1;visibility:visible;}
 .modal-box{
   width:100%;max-width:560px;max-height:88vh;overflow-y:auto;border-radius:22px;
   padding:28px;box-shadow:0 25px 60px rgba(0,0,0,.6);
   transform:scale(.85);transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+  background:rgba(13,22,18,0.96) !important;border:1px solid rgba(255,255,255,0.12);
+  backdrop-filter:none !important;-webkit-backdrop-filter:none !important;
 }
+body.light .modal-box{background:rgba(250,252,251,0.98) !important;border:1px solid rgba(0,0,0,0.08);}
 .modal-wrap.show .modal-box{transform:scale(1);}
 .modal-box.wide{max-width:760px;}
 .modal-close{position:absolute;top:16px;right:16px;}
